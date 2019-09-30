@@ -16,6 +16,7 @@ void main() {
           appBar: AppBar(
             title: Text("I Love Flutter"),
             backgroundColor: Colors.blueAccent,
+            leading: Image(image:NetworkImage("https://mclarencollege.in/images/icon.png")),
         ),
           body: Center(
             child: Image(
