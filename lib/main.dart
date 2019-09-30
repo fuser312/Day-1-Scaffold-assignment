@@ -5,9 +5,26 @@ void main() {
   // Link to icon: https://mclarencollege.in/images/icon.png
   // Link to center image: https://mclarencollege.in/images/9fc76a72-5b06-432f-b92e-d41d8ad5629f.jpg
 
-  String msg = 'Hello World';
-  Text textWidget = Text(msg);
-  Center center = Center(child: textWidget);
-  MaterialApp myApp = MaterialApp(home: center);
-  runApp(myApp);
+  //String msg = 'Hello World';
+  //Text textWidget = Text(msg);
+  //Center center = Center(child: textWidget);
+  //MaterialApp myApp = MaterialApp(home: center);
+  runApp(
+      MaterialApp(
+        home: Scaffold(
+          backgroundColor: Colors.blueAccent,
+          appBar: AppBar(
+            title: Text("I Love Flutter"),
+            backgroundColor: Colors.blueAccent,
+        ),
+          body: Center(
+            child: Image(
+              image: NetworkImage(
+                  "https://mclarencollege.in/images/9fc76a72-5b06-432f-b92e-d41d8ad5629f.jpg"
+              ),
+            ),
+          ),
+      ),
+      )
+  );
 }
