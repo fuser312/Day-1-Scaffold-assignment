@@ -25,6 +25,13 @@ void main() {
               ),
             ),
           ),
+          floatingActionButton: FloatingActionButton(
+              child: Image(
+                image: NetworkImage(
+                  "https://mclarencollege.in/images/icon.png"
+                ),
+              ),
+          ),
       ),
       )
   );
